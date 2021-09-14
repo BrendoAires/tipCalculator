@@ -37,19 +37,21 @@ main{
 			border-radius:1.25em;
 			margin-top:5vh;
 			height:80vh;
-			padding:30px;
+	/*		padding:30px;*/
+	
 }
 
 .container-percent{
 			margin-top:0;
 			width:100%;	
 			
+			
 }
 
 
 
 button{
-			width:9em;
+			width:8.3em;
 			height: 40px;
 			margin: 10px 0 6px 0;
 			border-radius:0.4em;
@@ -61,12 +63,13 @@ button{
 			font-weight:700;
 			}
 button:hover{
-						background: hsl(172, 67%, 45%);
+						background:hsl(172, 67%, 45%);
 						color:hsl(183, 100%, 15%);
 			}
 .button-reset{
 			background: hsl(172, 67%, 45%);
 			color:hsl(183, 100%, 15%);
+			width:100%;
 }
 
 .input-custom-tip{
@@ -87,10 +90,9 @@ button:hover{
 		 display: flex;
 		 flex-direction: row;
 		 justify-content:space-between;
+		 
 }
-.button-reset{
-			width:100%;
-}
+
 	
 .entrada{
 			display:flex;
@@ -135,13 +137,20 @@ input:focus{
 			border: 1px solid #26c0ab;
 }
 .container-resultado{
-
-			margin-top:2em;
+			width: 375px;
+			
 			background:hsl(183, 100%, 15%);
 			border-radius:0.4em;
-			padding:10px;
+			
+			
+			
 			
 }
+.container-result-total, .container-result-people{
+			display:flex;
+			flex-direction:column;
+}
+
 
 @media(max-width:375px){
 			

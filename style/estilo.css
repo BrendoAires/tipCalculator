@@ -60,7 +60,7 @@ main{
 }
 
 label{
-			margin:10px;
+			margin:10px 0 10px 10px;
 }
 
 button{
@@ -82,13 +82,17 @@ button:hover{
 .button-reset{
 			background: hsl(172, 67%, 45%);
 			color:hsl(183, 100%, 15%);
-			width:100%;
+			width:16.25em;
+			margin:0 15px 10px 15px;
+			
+			
 }
 
 .input-custom-tip{
 			width:8.4em;
 			color:hsl(183, 100%, 15%);
 			text-align:right;
+			margin-top:10px;
 			
 }
 
@@ -121,11 +125,11 @@ input{
 			background: hsl(189, 41%, 97%);
 			border-radius:0.4em;
 			height:40px;
-			margin:10px 10px 0 10px;
+			margin:0 10px 0 10px;
 			
 }
 .input-valor{
-			margin-bottom:40px;
+			margin-bottom:30px;
 }
 .botoes{
 			margin-bottom:20px;
@@ -140,6 +144,11 @@ input[name="npeople"], input[name="preco"]{
     font-weight:700;
     
     
+}
+
+.npeople{
+			margin: 30px 0 20px 10px;
+			
 }
 input[name="npeople"]{
 	 	background-image: url(../img/people.svg);
@@ -156,7 +165,7 @@ input:focus{
 			
 			background:hsl(183, 100%, 15%);
 			border-radius:0.4em;
-			
+		
 			
 			
 			
@@ -164,7 +173,11 @@ input:focus{
 .container-result-total, .container-result-people{
 			display:flex;
 			flex-direction:column;
+			margin:10px;
+			padding-top:10px;
+			
 }
+
 
 
 @media(max-width:375px){

@@ -16,6 +16,14 @@
 html{
 			
 }
+
+ h3{
+			line-height:30px;
+			margin:5px 0 0 180px;
+			font-size:30px;
+			width:100px;
+			
+}
 body{			
 			background: #80c1ff;
 			width:100%; 
@@ -89,6 +97,9 @@ button:hover{
 			
 }
 
+.button-reset:hover{
+			background:hsl(172, 67%, 45%);
+}
 .input-custom-tip{
 			width:8.4em;
 			color:hsl(183, 100%, 15%);

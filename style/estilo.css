@@ -59,7 +59,7 @@ main{
 			
 }
 
-label{
+.label-calc{
 			margin:10px 0 10px 10px;
 }
 
@@ -173,8 +173,9 @@ input:focus{
 .container-result-total, .container-result-people{
 			display:flex;
 			flex-direction:column;
-			margin:10px;
-			padding-top:10px;
+			
+			margin-left:15px;
+			padding: 20px 0 20px 0;
 			
 }
 

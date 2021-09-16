@@ -4,6 +4,7 @@
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link href="style/estilo.css" rel="stylesheet">
+			
 				<title>Spliter</title>
 </head>
 <body>
@@ -21,24 +22,24 @@
 												<form class="calculo">
 															<div class="entrada">
 																		<label class="label-calc" for="preco">Bill</label>
-																		<input type="number" name="preco" id="preco" class="input-valor">
+																		<input onchange="calculaTotal()" type="number" name="preco" id="preco" class="input-valor">
 															</div>
 												
 												<label class="label-margin label-calc">Select Tip %</label>
 															<div class="container-percent">
 																		<div class="botoes">
 																		<div class="button-group">
-																					<button type="button" class="margin-left">5%</button>
-																					<button type="button" class="margin-right">10%</button>
+																					<button  type="button" class="margin-left" value="0.05" id="bt5">5%</button>
+																					<button type="button" class="margin-right" value="0.1"  id="bt10">10%</button>
 																		</div>
 																		<div class="button-group">
 																		
-																					<button type="button" class="margin-left">15%</button>
-																					<button type="button" class="margin-right">25%</button>
+																					<button type="button" class="margin-left" value="0.15"  id="bt15">15%</button>
+																					<button type="button" class="margin-right" value="0.25"  id="bt25">25%</button>
 																		</div>
 																		<div class="button-group">	
 																																																								
-																					<button type="button" class="margin-left">50%</button>
+																					<button type="button" class="margin-left" value="0.5"  id="bt50">50%</button>
 																					<input class="input-custom-tip" type="number" placeholder="Custom" style="margin-right:10px">
 																		</div>
 															</div>
@@ -73,7 +74,7 @@
 						
 			</main>
 			
-			
+			<script src="script/script.js"></script>
 			
 </body>
 </html>

@@ -17,11 +17,12 @@ function taxa(tip){
 		
 			let preco = document.getElementById("preco").value;
 			let qtdPessoas = document.getElementById("in-npeople").value;
-			/*let percent = tip * preco;*/
-		/*	console.log(percent);*/
-		
-			let total = (preco + (preco * tip)) / qtdPessoas;
+			console.log(qtdPessoas);
+			let percent = preco * tip;
+			let total = (preco + percent) / qtdPessoas;
 			console.log(total);
+			
+		
 }
 
 function reset(){
@@ -40,4 +41,5 @@ function calcular(){
 		console.log(total);
 		*/
 			}
+			
 			

@@ -22,7 +22,25 @@ function taxa(tip){
 			let total = (preco + percent) / qtdPessoas;
 			console.log(total);
 			
+				const dados = `
+				<div class="resultado">
+							<ul>
+					<label>${total}</label>
+				
+				
+							</ul>
+				</div>
+		`;
 		
+		const resultado = document.getElementById("container-resultado");
+		resultado.innerHTML = dados;				
+			
+				
+			/*let divEl= document.querySelector('container-resultado');
+			let pEl= document.createElement('p');
+			divEl.appendChild(pEl)
+			pEl.innerHTML = 'EUEUU'*/
+			
 }
 
 function reset(){
@@ -32,14 +50,6 @@ function reset(){
 }
 
 function calcular(){
-		
-			
-			/*
-			taxa();
-			total = (preco + (preco * taxa)) / qtdPessoas;*/
-			/*console.log(total);
-		console.log(total);
-		*/
 			}
 			
 			

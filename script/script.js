@@ -24,7 +24,7 @@ function taxa(tip){
 			var totalPessoaFormatado = tPessoa.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 			var totalFormatado = tTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 			
-			console.log(total);
+			
 			
 			
 			const dadosPessoa = `
@@ -41,18 +41,14 @@ function taxa(tip){
 		const resultadoTotal = document.getElementById("label-resultado-total");
 		resultadoTotal.innerHTML = dadosTotal;			
 			
-				
-			/*let divEl= document.querySelector('container-resultado');
-			let pEl= document.createElement('p');
-			divEl.appendChild(pEl)
-			pEl.innerHTML = 'EUEUU'*/
-			
 }
 
 function reset(){
 						document.getElementById("preco").value = ""
 						document.getElementById("in-npeople").value = ""			
 						document.getElementById("input-custom").value = ""
+						document.getElementById("label-resultado-pessoa").innerHTML = ""
+						document.getElementById("label-resultado-total").innerHTML = ""
 }
 
 function calcular(){

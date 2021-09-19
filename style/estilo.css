@@ -80,7 +80,7 @@ main{
 
 /* ---CONFIG LABEL */
 .label-calc{
-			margin:10px 0 10px 10px;
+			margin:30px 0 10px 10px;
 }
 .label-white{
 			color:white;
@@ -194,7 +194,7 @@ input[name="npeople"], input[name="preco"]{
 }
 
 .npeople{
-			margin: 30px 0 30px 10px;
+			margin: 10px 0 30px 10px;
 			
 }
 input[name="npeople"]{

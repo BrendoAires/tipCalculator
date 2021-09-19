@@ -22,30 +22,30 @@
 												<form class="calculo">
 															<div class="entrada">
 																		<label class="label-calc" for="preco">Bill</label>
-																		<input onchange="calculaTotal()" type="number" name="preco" id="preco" class="input-valor">
+																		<input type="number" name="preco" id="preco" class="input-valor">
 															</div>
 												
 												<label class="label-margin label-calc">Select Tip %</label>
 															<div class="container-percent">
 																		<div class="botoes">
 																		<div class="button-group">
-																					<button  type="button" class="margin-left" value="0.05" id="bt5">5%</button>
-																					<button type="button" class="margin-right" value="0.1"  id="bt10">10%</button>
+																					<button  type="button" class="margin-left"  id="bt5" onclick="taxa('0.05')">5%</button>
+																					<button type="button" class="margin-right"   id="bt10" onclick="taxa('0.10')">10%</button>
 																		</div>
 																		<div class="button-group">
 																		
-																					<button type="button" class="margin-left" value="0.15"  id="bt15">15%</button>
-																					<button type="button" class="margin-right" value="0.25"  id="bt25">25%</button>
+																					<button type="button" class="margin-left" id="bt15" onclick="taxa('0.15')">15%</button>
+																					<button type="button" class="margin-right" id="bt25" onclick="taxa('0.25')">25%</button>
 																		</div>
 																		<div class="button-group">	
 																																																								
-																					<button type="button" class="margin-left" value="0.5"  id="bt50">50%</button>
+																					<button type="button" class="margin-left"  id="bt50" onclick="taxa('0.50')">50%</button>
 																					<input class="input-custom-tip" type="number" placeholder="Custom" style="margin-right:10px">
 																		</div>
 															</div>
 												</div>
-															<label class="label-calc" for="in-npeople" >Number of People</label>
-															<input class="npeople" type="number" name="npeople" id="in-npeople">
+															<label class="label-calc" for="in-npeople"  >Number of People</label>
+															<input onchange="calcular()" class="npeople" type="number" name="npeople" id="in-npeople">
 												
 												</form>
 									</div>
@@ -67,7 +67,7 @@
 															<label class="result-total"></label>
 												</div>
 															
-												<button class="button-reset" type="button">RESET</button>
+												<button onclick="reset()" class="button-reset" id="reset" type="button">RESET</button>
 									</div>
 							</div>		
 									

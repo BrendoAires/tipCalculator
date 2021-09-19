@@ -25,17 +25,9 @@ function taxa(tip){
 }
 
 function reset(){
-
-						var btReset = document.querySelector("#reset");
-						var preco = document.querySelector("#preco").value;
-						var qtdPessoas = document.querySelector("#in-npeople").value;
-						
-						btReset.addEventListener("click", function(event){
-									document.getElementById("preco") = "";
-									document.getElementById("in-npessoas")= "";
-									
-						})
-						
+						document.getElementById("preco").value = ""
+						document.getElementById("in-npeople").value = ""			
+						document.getElementById("input-custom").value = ""
 }
 
 function calcular(){

@@ -1,31 +1,52 @@
 /*---(Bill + (bill * tip)) / numero pessoas = total */
 /* --(bill * tip) / número de pessoas = tip amount*/
 
-/*const calculaTotal = function(){
-			const preco = document.getElementById("preco").value;
-			const npessoas = document.getElementById("in-npeople").value;
-			const botao = document.getElementById("bt5").value;
-			const botao = document.getElementById("bt5").value;
-			
-			
 
+function pegaDados(){
+			preco = parseFloat(document.getElementById("preco").value);
+			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
+			customTip = parseFloat(document.getElementById("input-custom").value);
 }
-*/
 
 
-function taxa(tip){
-		
-			let preco = parseFloat(document.getElementById("preco").value);
-			let qtdPessoas = parseInt(document.getElementById("in-npeople").value);
-			let pPessoa = (preco * tip) / qtdPessoas;
-			var total = (preco + (preco * tip)) / qtdPessoas;
+
+function customTip(){
+			
+						pegaDados();
+						pPessoa = (preco * customTip) / qtdPessoas;
+						total = (preco + (preco * customTip)) / qtdPessoas;
+						imprimeResultado();
+			
+}
+
+function pegaTaxa(tip){
+			taxa = tip / 100;
+			console.log(taxa)
+			
+			
+}
+
+
+function calcular(){
+
+			pegaDados();
+			pegaTaxa()
+						
+			
+			pPessoa = (preco + (preco * taxa)) / qtdPessoas;
+			total = (preco + taxa) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
+			imprimeResultado();
+
+}
+			
+
 			
 			
-			
-			
-			
+function imprimeResultado()	{
+	calcular();
+	
 			const dadosPessoa = `
 							<label class="label-resultado-pessoa">$${tPessoa}</label>
 				`;
@@ -50,7 +71,5 @@ function reset(){
 						document.getElementById("label-resultado-total").innerHTML = ""
 }
 
-function calcular(){
-			}
-			
+
 			

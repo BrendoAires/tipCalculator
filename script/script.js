@@ -27,14 +27,14 @@ function taxa(tip){
 			
 			
 			const dadosPessoa = `
-							<label class="label-resultado-pessoa">${tPessoa}</label>
+							<label class="label-resultado-pessoa">$${tPessoa}</label>
 				`;
 		
 		const resultadoPessoa = document.getElementById("label-resultado-pessoa");
 		resultadoPessoa.innerHTML = dadosPessoa;			
 			
 				const dadosTotal = `
-							<label class="label-resultado-total">${tTotal}</label>
+							<label class="label-resultado-total">$${tTotal}</label>
 				`;
 		
 		const resultadoTotal = document.getElementById("label-resultado-total");

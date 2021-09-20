@@ -4,40 +4,38 @@
 
 function pegaDados(){
 			preco = parseFloat(document.getElementById("preco").value);
+			pegaTaxa();
 			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
 			customTip = parseFloat(document.getElementById("input-custom").value);
+		
+		
+			
 }
 
 
 
-function customTip(){
+/*function customTip(){
 			
-						pegaDados();
+						
 						pPessoa = (preco * customTip) / qtdPessoas;
 						total = (preco + (preco * customTip)) / qtdPessoas;
 						imprimeResultado();
 			
-}
+}*/
+
 
 function pegaTaxa(tip){
-			taxa = tip / 100;
-			console.log(taxa)
-			
-			
+				taxa = tip / 100;
 }
 
-
 function calcular(){
-
 			pegaDados();
-			pegaTaxa()
-						
-			
-			pPessoa = (preco + (preco * taxa)) / qtdPessoas;
-			total = (preco + taxa) / qtdPessoas;
+			pPessoa = (preco * taxa) / qtdPessoas;
+			total = (preco + (preco * taxa)) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
-			imprimeResultado();
+			imprimeResultado()
+			
 
 }
 			
@@ -45,7 +43,6 @@ function calcular(){
 			
 			
 function imprimeResultado()	{
-	calcular();
 	
 			const dadosPessoa = `
 							<label class="label-resultado-pessoa">$${tPessoa}</label>

@@ -21,21 +21,20 @@ function taxa(tip){
 			var total = (preco + (preco * tip)) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
-			var totalPessoaFormatado = tPessoa.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-			var totalFormatado = tTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+			
 			
 			
 			
 			
 			const dadosPessoa = `
-							<label class="label-resultado-pessoa">${totalPessoaFormatado}</label>
+							<label class="label-resultado-pessoa">${tPessoa}</label>
 				`;
 		
 		const resultadoPessoa = document.getElementById("label-resultado-pessoa");
 		resultadoPessoa.innerHTML = dadosPessoa;			
 			
 				const dadosTotal = `
-							<label class="label-resultado-total">${totalFormatado}</label>
+							<label class="label-resultado-total">${tTotal}</label>
 				`;
 		
 		const resultadoTotal = document.getElementById("label-resultado-total");

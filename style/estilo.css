@@ -95,14 +95,16 @@ main{
 }
 
 .label-resultado-pessoa{
-			color:white;
+			color:hsl(183, 100%, 15%);
 			font-size:35px;
+			padding:10px;
 			
 }
 
 .label-resultado-total{
-			color:white;
+			color:hsl(183, 100%, 15%);
 			font-size:35px;
+			padding:10px;
 }
 /* ---- FIM ----- */
 
@@ -124,11 +126,6 @@ button{
 button:hover{
 			background:hsl(172, 67%, 45%);
 			color:hsl(183, 100%, 15%);
-}
-.buttonReset{
-			display:flex;
-			flex-direction:row;
-			wrap:wrap;
 }
 
 .button-reset{
@@ -225,27 +222,35 @@ input:focus{
 .container-resultado{
 			display:flex;
 			flex-direction: column;
+			wrap:wrap;
 			padding-top: 10px;
 			width: 17.75em;
 			margin: 0 auto;
-			height:300px;
+			height:200px;
 			background:hsl(183, 100%, 15%);
 			border-radius:0.4em;		
 }
 .container-result-total, .container-result-people{
 			display:flex;
 			flex-direction:row;
+			width:17.75em;
 			
-			margin-left:15px;
-			padding: 20px 0 20px 0;
+		padding: 20px 0 20px 0;
+			
 			
 }
 .aa{
 			display:flex;
 			flex-direction: column;
+			margin: 0 15px 0 15px;
 }
 
-
+.bb{
+		display:flex;	
+		flex-direction: column;
+		text-align:right;
+		
+}
 
 @media(max-width:375px){
 			

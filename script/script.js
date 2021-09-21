@@ -11,29 +11,33 @@
 						imprimeResultado();
 			
 }*/
-function pegaDados(tip){
+
+function calcularTaxa(tip){
+			taxa = tip / 100
+			return calcularTaxa
+}
+
+
+function pegaDados(){
 			preco = parseFloat(document.getElementById("preco").value);
 			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
 			customTip = parseFloat(document.getElementById("input-custom").value);
-			taxa = parseFloat(tip / 100);
+				
 }
+
 function calcular(){
 			pegaDados();
-			
+			console.log(calcularTaxa)
 			pPessoa = (preco * taxa) / qtdPessoas;
 			total = (preco + (preco * taxa)) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
-		
-			console.log(tPessoa, tTotal)
-			
+	
 }
-			
-
 			
 			
 function imprimirResultado()	{
-			calcular();
+			calcular()
 			const dadosPessoa = `
 							<label class="label-resultado-pessoa">$${tPessoa}</label>
 				`;

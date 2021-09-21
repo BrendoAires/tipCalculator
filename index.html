@@ -35,18 +35,18 @@
 																		</div>
 																		<div class="button-group">
 																		
-																					<button type="button" class="margin-left" id="bt15" onclick="pegaDados(15)">15%</button>
-																					<button type="button" class="margin-right" id="bt25" onclick="pegaDados('25')">25%</button>
+																					<button onclick="calcularTaxa('15')" type="button" class="margin-left" id="bt15">15%</button>
+																					<button onclick="calcularTaxa('20')" type="button" class="margin-right" id="bt25">25%</button>
 																		</div>
 																		<div class="button-group">	
 																																																								
-																					<button type="button" class="margin-left"  id="bt50" onclick="pegaDados('50')">50%</button>
+																					<button onclick="calcularTaxa('50')" type="button" class="margin-left"  id="bt50" >50%</button>
 																					<input onclick="customTip()" class="input-custom-tip" id="input-custom" type="number" placeholder="Custom" style="margin-right:10px">
 																		</div>
 															</div
 												</div>
 															<label class="label-calc" for="in-npeople">Number of People</label>
-															<input onchange="imprimirResultado()" class="npeople" type="number" name="npeople" id="in-npeople">
+															<input onKeyPress="imprimirResultado()" class="npeople" type="number" name="npeople" id="in-npeople">
 												
 												</form>
 									</div>

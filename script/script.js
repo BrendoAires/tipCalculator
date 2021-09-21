@@ -13,26 +13,22 @@
 }*/
 
 function calcularTaxa(tip){
-			taxa = tip / 100
+			taxa = parseFloat(tip / 100)
 			return calcularTaxa
 }
-
 
 function pegaDados(){
 			preco = parseFloat(document.getElementById("preco").value);
 			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
 			customTip = parseFloat(document.getElementById("input-custom").value);
-				
 }
 
 function calcular(){
 			pegaDados();
-			console.log(calcularTaxa)
 			pPessoa = (preco * taxa) / qtdPessoas;
 			total = (preco + (preco * taxa)) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
-	
 }
 			
 			
@@ -51,7 +47,6 @@ function imprimirResultado()	{
 		
 		const resultadoTotal = document.getElementById("label-resultado-total");
 		resultadoTotal.innerHTML = dadosTotal;			
-			
 }
 
 function reset(){
@@ -61,6 +56,3 @@ function reset(){
 						document.getElementById("label-resultado-pessoa").innerHTML = ""
 						document.getElementById("label-resultado-total").innerHTML = ""
 }
-
-
-			

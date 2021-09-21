@@ -13,7 +13,7 @@
 }*/
 
 function calcularTaxa(tip){
-			taxa = parseFloat(tip / 100)
+			taxa = tip / 100
 			return calcularTaxa
 }
 

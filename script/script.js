@@ -3,14 +3,24 @@
 
 
 
-/*function customTip(){
-			
+function customTip(){
+						pegaDados()
 						
-						pPessoa = (preco * customTip) / qtdPessoas;
-						total = (preco + (preco * customTip)) / qtdPessoas;
-						imprimeResultado();
+						customTaxa = custom / 100;
+						pPessoa = (preco * customTaxa) / qtdPessoas;
+						total = (preco + (preco * customTaxa)) / qtdPessoas;
+						tPessoa = pPessoa.toFixed(2);
+						tTotal = total.toFixed(2);
+						imprimirResultado()
+						
+						
 			
-}*/
+}
+
+function desativaButton(){
+			
+		
+}
 
 function calcularTaxa(tip){
 			taxa = tip / 100
@@ -20,20 +30,24 @@ function calcularTaxa(tip){
 function pegaDados(){
 			preco = parseFloat(document.getElementById("preco").value);
 			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
-			customTip = parseFloat(document.getElementById("input-custom").value);
+			custom = parseFloat(document.getElementById("input-custom").value);
+			
 }
 
 function calcular(){
 			pegaDados();
+			calcularTaxa()
 			pPessoa = (preco * taxa) / qtdPessoas;
 			total = (preco + (preco * taxa)) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
+			imprimirResultado()
 }
 			
 			
 function imprimirResultado()	{
-			calcular()
+			
+			
 			const dadosPessoa = `
 							<label class="label-resultado-pessoa">$${tPessoa}</label>
 				`;

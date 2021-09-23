@@ -1,53 +1,89 @@
-/*---(Bill + (bill * tip)) / numero pessoas = total */
-/* --(bill * tip) / número de pessoas = tip amount*/
+//---(Bill + (bill * tip)) / numero pessoas = total 
+// --(bill * tip) / número de pessoas = tip amount
 
+/*function checkFocus(){
 
-
-function customTip(){
-						pegaDados()
+			if (document.hasFocus()){
+						customTip()
 						
-						customTaxa = custom / 100;
-						pPessoa = (preco * customTaxa) / qtdPessoas;
-						total = (preco + (preco * customTaxa)) / qtdPessoas;
-						tPessoa = pPessoa.toFixed(2);
-						tTotal = total.toFixed(2);
-						imprimirResultado()
-						
-						
-			
 }
-
-function desativaButton(){
-			
+}*/
+function pegaInput(){
+			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
 		
+			preco = parseFloat(document.getElementById("preco").value);
 }
+
+function desativarButton(){
+			document.getElementById("bt5").disabled = true;
+			document.getElementById("bt10").disabled = true
+			document.getElementById("bt15").disabled = true
+			document.getElementById("bt25").disabled = true
+			document.getElementById("bt50").disabled = true
+
+}
+
+function ativarButton(){
+			document.getElementById("bt5").disabled = false;
+			document.getElementById("bt10").disabled = false
+			document.getElementById("bt15").disabled = false
+			document.getElementById("bt25").disabled = false
+			document.getElementById("bt50").disabled = false
+}
+function customTip(){
+			pegaInput()
+			desativarButton()
+						
+			tip = parseFloat(document.getElementById("input-custom").value);
+						
+						Taxa = tip / 100;
+							
+			
+}
+
 
 function calcularTaxa(tip){
-			taxa = tip / 100
-			return calcularTaxa
-}
-
-function pegaDados(){
-			preco = parseFloat(document.getElementById("preco").value);
-			qtdPessoas = parseInt(document.getElementById("in-npeople").value);
-			custom = parseFloat(document.getElementById("input-custom").value);
-			
-}
-
-function calcular(){
-			pegaDados();
-			calcularTaxa()
-			pPessoa = (preco * taxa) / qtdPessoas;
-			total = (preco + (preco * taxa)) / qtdPessoas;
+			pegaInput()
+			Taxa = tip / 100;
+			console.log(Taxa)
+			pPessoa = (preco * Taxa) / qtdPessoas;
+			total = (preco + (preco * Taxa)) / qtdPessoas;
 			tPessoa = pPessoa.toFixed(2);
 			tTotal = total.toFixed(2);
-			imprimirResultado()
+			
+			
 }
+
+
+
+function calcular(){
+		
+			abc = document.querySelector('#input-custom').value
+			if (abc.length > 1){
+			
+				customTip()
+				pPessoa = (preco * Taxa) / qtdPessoas;
+			total = (preco + (preco * Taxa)) / qtdPessoas;
+			tPessoa = pPessoa.toFixed(2);
+			tTotal = total.toFixed(2);	
+			imprimirResultado()
+				
+					//console.log(customTaxa)
+			}else{
+			
+			ativarButton()
+			calcularTaxa()
+		imprimirResultado()
 			
 			
+			}		
+			
+}
+	
 function imprimirResultado()	{
+		
 			
-			
+		
 			const dadosPessoa = `
 							<label class="label-resultado-pessoa">$${tPessoa}</label>
 				`;

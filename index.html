@@ -31,23 +31,23 @@
 															<div class="container-percent">
 																		<div class="botoes">
 																		<div class="button-group">
-																					<button onclick="calcularTaxa('5')" type="button" value="5" class="margin-left"  id="bt5" enabled>5%</button>
+																					<button onclick="calcularTaxa('5')"  type="button" value="5" class="margin-left"  id="bt5" >5%</button>
 																					<button onclick="calcularTaxa('10')" type="button" value="10" class="margin-right"   id="bt10" >10%</button>
 																		</div>
 																		<div class="button-group">
 																		
 																					<button onclick="calcularTaxa('15')" type="button" class="margin-left" id="bt15">15%</button>
-																					<button onclick="calcularTaxa('20')" type="button" class="margin-right" id="bt25">25%</button>
+																					<button onclick="calcularTaxa('25')" type="button" class="margin-right" id="bt25">25%</button>
 																		</div>
 																		<div class="button-group">	
 																																																								
 																					<button onclick="calcularTaxa('50')" type="button" class="margin-left"  id="bt50" >50%</button>
-																					<input onpressdown="desativaButton()"  class="input-custom-tip" id="input-custom" type="number" placeholder="Custom" style="margin-right:10px">
+																					<input onkeypress="customTip()" class="input-custom-tip" id="input-custom" type="number" placeholder="Custom" style="margin-right:10px">
 																		</div>
 															</div
 												</div>
 															<label class="label-calc" for="in-npeople">Number of People</label>
-															<input onkeydown="customTip()" class="npeople" type="number" name="npeople" id="in-npeople">
+															<input onkeydown="calcular()" class="npeople" type="number" name="npeople" id="in-npeople">
 												
 												</form>
 									</div>

@@ -31,23 +31,23 @@
 															<div class="container-percent">
 																		<div class="botoes">
 																		<div class="button-group">
-																					<button onclick="calcular('5')"  type="button" value="5" class="margin-left"  id="bt5" >5%</button>
-																					<button onclick="pegaInput('10')" type="button" value="10" class="margin-right"   id="bt10" >10%</button>
+																					<button  type="button" class="margin-left button"  id="bt5" data-set="cinco" >5%</button>
+																					<button  type="button" class="margin-right button"   id="bt10" data-set="dez">10%</button>
 																		</div>
 																		<div class="button-group">
 																		
-																					<button onclick="pegaInput('15')" type="button" class="margin-left" id="bt15">15%</button>
-																					<button onclick="pegaInput('25')" type="button" class="margin-right" id="bt25">25%</button>
+																					<button type="button" class="margin-left button" id="bt15" data-set="quinze">15%</button>
+																					<button type="button" class="margin-right button" id="bt25" data-set="vinte e cinco">25%</button>
 																		</div>
 																		<div class="button-group">	
 																																																								
-																					<button onclick="pegaInput('50')" type="button" class="margin-left"  id="bt50" >50%</button>
-																					<input onkeypress="customTip()" class="input-custom-tip" id="input-custom" type="number" placeholder="Custom" style="margin-right:10px">
+																					<button type="button" class="margin-left button"  id="bt50" data-set="cinquenta">50%</button>
+																					<input  class="input-custom-tip" id="input-custom" type="number" placeholder="Custom" style="margin-right:10px">
 																		</div>
 															</div
 												</div>
 															<label class="label-calc" for="in-npeople">Number of People</label>
-															<input onkeypress="imprimirResultado()" class="npeople" type="number" name="npeople" id="in-npeople">
+															<input class="npeople" type="number" name="npeople" id="npeople">
 												
 												</form>
 									</div>
@@ -61,7 +61,7 @@
 																		<label class="label-subtitulo">/ person</label>
 														 </div>
 														 <div class="bb">
-																		<label class="result-person" id="label-resultado-pessoa"></label>
+																		<label class="result-person label-resultado-pessoa" id="label-resultado-pessoa">$0.00</label>
 															</div>
 												</div>
 															
@@ -73,12 +73,12 @@
 															</div>
 															
 															<div class="bb">
-																		<label class="result-total" id="label-resultado-total"></label> 
+																		<label class="resulttotal label-resultado-total" id="label-resultado-total">$0.00</label> 
 															</div>
 												</div>
 												
 												<div class="buttonReset">
-															<button onclick="reset()" class="button-reset" id="reset" type="button">RESET</button>
+															<button class="button-reset" id="reset" type="button">RESET</button>
 												</div>
 												
 									</div>

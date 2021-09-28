@@ -64,6 +64,22 @@ function getTip(x){
 			break;
 			}
 }
+
+
+inputCustom.addEventListener('keydown',getInputCustom)
+
+function getInputCustom(){
+			const quantidadePessoas = parseFloat(nPessoas.value)
+			const bill = parseFloat(valor.value)
+			const input = parseFloat(inputCustom.value)
+			taxa  = (bill * input) / quantidadePessoas;
+			total = ((bill * input) + bill) / quantidadePessoas;
+			Pessoa = taxa.toFixed(2);
+		 Total = total.toFixed(2);
+		 imprimir()
+}
+
+
 function imprimir(){
 
 const dadosPessoa = `

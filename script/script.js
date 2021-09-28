@@ -66,16 +66,17 @@ function getTip(x){
 }
 
 
-inputCustom.addEventListener('keydown',getInputCustom)
+inputCustom.addEventListener('input',getInputCustom)
 
 function getInputCustom(){
 			const quantidadePessoas = parseFloat(nPessoas.value)
 			const bill = parseFloat(valor.value)
-			const input = parseFloat(inputCustom.value)
+			const input = parseFloat(inputCustom.value / 100)
 			taxa  = (bill * input) / quantidadePessoas;
 			total = ((bill * input) + bill) / quantidadePessoas;
 			Pessoa = taxa.toFixed(2);
 		 Total = total.toFixed(2);
+		 console.log(input)
 		 imprimir()
 }
 

@@ -23,8 +23,14 @@
 									<div class="container-calculo">
 												<form class="calculo">
 															<div class="entrada">
-																		<label class="label-calc" for="preco">Bill</label>
+																		<div class="label-entrada">
+																					<label class="label-calc" for="preco">Bill</label>
+																		
+																					<label id="msgErro"></label>
+																		</div>
+																
 																		<input type="number" name="preco" id="preco" class="input-valor">
+																		
 															</div>
 												
 												<label class="label-margin label-calc">Select Tip %</label>
@@ -47,12 +53,12 @@
 															</div
 												</div>
 															<label class="label-calc" for="in-npeople">Number of People</label>
+															<label id="msgErro1"></label>
 															<input class="npeople" type="number" name="npeople" id="npeople">
 												
 												</form>
 									</div>
-						
-						
+
 					
 									<div class="container-resultado">
 												<div class="container-result-people">

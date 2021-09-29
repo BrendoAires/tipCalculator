@@ -5,8 +5,89 @@ const botao = document.querySelectorAll('button')
 const btReset = document.querySelector('#reset');
 const valor = document.querySelector('#preco')
 const nPessoas = document.querySelector('#npeople')
+const msgErro = document.querySelector('#msgErro')
+const msgErro1 = document.querySelector('#msgErro1')
+			
+	valor.addEventListener('input', validaPreco);
+	function validaPreco(){
+	
+			if(Number(valor.value) === 0){
+			
+			const infoErro =`
+			<label class="msgErro">Can't be 0</label>
+	`;
+			const erro = msgErro;
+			erro.innerHTML = infoErro;				
+
+			valor.value = ''
+			valor.classList.add('inputerro')
+			valor.classList.remove('ok')
+		
+			}
+			else{
+			valor.classList.add('ok')
+			valor.classList.remove('inputerro')
+			const infoErro =`
+			<label class="msgErro"></label>
+	`;
+			const erro = msgErro;
+			erro.innerHTML = infoErro;				
+			
+						}
+
+	}		
+	
+	inputCustom.addEventListener('input', validaInputCustom);
+	function validaInputCustom(){
+	
+			if(Number(inputCustom.value) === 0){
 			
 			
+			inputCustom.value = ''
+			inputCustom.classList.add('inputerro')
+			inputCustom.classList.remove('ok')
+		
+			}
+			else{
+			inputCustom.classList.add('ok')
+			inputCustom.classList.remove('inputerro')
+			
+						}
+
+	}		
+	
+	
+	nPessoas.addEventListener('input', validaInputPessoa);
+	function validaInputPessoa(){
+	
+			if(Number(nPessoas.value) === 0){
+			
+			const infoErro =`
+			<label class="msgErro">Can't be 0</label>
+	`;
+			const erro = msgErro1;
+			erro.innerHTML = infoErro;				
+
+			nPessoas.value = ''
+			nPessoas.classList.add('inputerro')
+			nPessoas.classList.remove('ok')
+		
+			}
+			else{
+			nPessoas.classList.add('ok')
+			nPessoas.classList.remove('inputerro')
+			const infoErro =`
+			<label class="msgErro"></label>
+	`;
+			const erro1 = msgErro1;
+			erro.innerHTML = infoErro;				
+			
+						}
+
+	}		
+	
+	
+
 botao.forEach((button)=>{
 			button.addEventListener('click', getTip)
 });

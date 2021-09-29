@@ -80,7 +80,7 @@ const msgErro1 = document.querySelector('#msgErro1')
 			<label class="msgErro"></label>
 	`;
 			const erro1 = msgErro1;
-			erro.innerHTML = infoErro;				
+			erro1.innerHTML = infoErro;				
 			
 						}
 

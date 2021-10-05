@@ -193,4 +193,9 @@ function reset(){
 		 valor.value = ''
 			nPessoas.value = ''
 			inputCustom.value = ''
+			nPessoas.classList.remove('inputerro')
+			valor.classList.remove('inputerro')
+			inputCustom.classList.remove('inputerro')
+			
+								
 }
